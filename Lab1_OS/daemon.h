@@ -1,6 +1,4 @@
-#ifndef DAEMON_H
-#define DAEMON_H
-
+#pragma once
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -12,8 +10,6 @@ public:
     bool initialize(const std::string& configPath);
     void run();
     void stop();
-    
-    // Signal handlers
     void reloadConfig();
     void terminate();
 
@@ -39,5 +35,3 @@ private:
     bool running_;
     static Daemon* instance_;
 };
-
-#endif
