@@ -1,4 +1,0 @@
-ToolSet: 1.0 (local)Ninja: 1.12.1@/home/danilkr/Downloads/CLion-2025.2.3/clion-2025.2.3/bin/ninja/linux/x64/ninja
-Options: 
-
-Options:-DCMAKE_MAKE_PROGRAM=/home/danilkr/Downloads/CLion-2025.2.3/clion-2025.2.3/bin/ninja/linux/x64/ninja
