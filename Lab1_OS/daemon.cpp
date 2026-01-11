@@ -17,13 +17,11 @@
 #include <sys/wait.h>
 #include <filesystem>
 
-Daemon* Daemon::instance_ = nullptr;
+//Daemon* Daemon::instance_ = nullptr;
 
 Daemon& Daemon::getInstance() {
-    if (!instance_) {
-        instance_ = new Daemon();
-    }
-    return *instance_;
+    static Daemon instance;
+    return instance;
 }
 
 void signalHandler(int sig) {
